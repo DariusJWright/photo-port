@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers'
 
-const Nav = () => {
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+function Nav(props) {
   
   const {
     categories = [],
     setCurrentCategory,
     currentCategory
   } = props;
+  
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
   
   return (
     <header className='flex-row px-1'>
