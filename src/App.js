@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
 import Gallery from './components/Gallery';
-import ContactForm from './components/Contact';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
             <About></About>
           </>
         ) : (
-            <ContactForm></ContactForm>
+            <Contact></Contact>
         )}
       </main>
     </div>
